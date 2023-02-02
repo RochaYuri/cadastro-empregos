@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Empregos</title>
+    <script src="./js/index.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+    </link>
+</head>
+
+<body>
+    <header class="header">
+        <h4 class="navTitle">Cadastro de Empregos!</h4>
+        <nav>
+            <button class="navBtn" id="gitHubBtn"><a target="_blank" href="#">Repositório</a></button>
+            <button class="navBtn" id="registeredBtn"><a href="#registeredSection">Cadastrados</a></button>
+        </nav>
+    </header>
+    <main class="main">
+        <h1 class="mainTitle">Cadastre agora sua empresa ou seu serviço!</h1>
+        <section class="typeOf">
+            <h4 class="formTitle">Você é empresa ou pessoa?</h4>
+            <button type="button" id="typeOfCompany" class="typeOfRadio" value="Empresa">Empresa</button>
+            <button type="button" id="typeOfPerson" class="typeOfRadio" value="Pessoa">Pessoa</button>
+        </section>
+        <section id="signUp">
+            <form id="signUpInfos">
+                <p class="beforeTypeOfChosen">Escolha uma opção acima!
+                </p>
+            </form>
+        </section>
+        <button type="submit" id="submitBtn" value="Cadastrar">Cadastrar</button>
+        <section id="registeredSection" class="registered">
+            <h1 class="registeredTitle">Registrados:</h1>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Sistema desenvolvido por <a target="_blank" href="https://rochayuri.github.io/rochayuri">RochaYuri</a>
+            || Repositório completo do <a target="_blank" href="https://github.com/rochayuri">GitHub</a>.</p>
+    </footer>
+</body>
+
+</html>

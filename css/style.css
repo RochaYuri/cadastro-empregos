@@ -1,0 +1,481 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #c7ede8;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.header {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #1693a5;
+}
+
+.navTitle {
+  font-size: 4rem;
+}
+
+.navBtn {
+  background-color: transparent;
+  border: 2px solid transparent;
+  font-size: 1.5rem;
+  margin-left: 3em;
+  padding: 0.1em;
+  transition: 0.4s;
+}
+
+.navBtn:hover {
+  border-bottom-color: #000;
+}
+
+.main {
+  min-height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+}
+
+.mainTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  width: 100%;
+  height: 15vh;
+  grid-area: mainTitle;
+}
+
+.typeOf {
+  text-align: center;
+  width: 100%;
+  height: 15vh;
+  grid-area: typeOf;
+}
+
+.typeOfRadio {
+  font-size: 1.7rem;
+  margin: 0.5em;
+  padding: 0.4em;
+  border: 3px solid;
+  border-radius: 15px;
+  background-color: transparent;
+  transition: 0.2s linear;
+  color: #5a5f5f;
+}
+
+.typeOfRadio:hover {
+  cursor: pointer;
+  color: #a0ded6;
+  background-color: #5a5f5f;
+}
+
+.typeOfRadio:focus-within {
+  color: #a0ded6;
+  background-color: #5a5f5f;
+}
+
+.formTitle {
+  font-size: 2rem;
+}
+
+.person {
+  margin-left: 4em;
+}
+
+.typeOfLabel {
+  font-size: 2rem;
+  margin-left: 0.3em;
+  margin-right: 0.8em;
+}
+
+#signUp {
+  grid-area: signUp;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 45vh;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 5px solid black;
+  border-radius: 250px;
+  padding: 2em;
+  margin-bottom: 3em;
+}
+
+#signUpInfos {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90vw;
+  justify-content: center;
+}
+
+.beforeTypeOfChosen {
+  display: flex;
+  align-items: center;
+  font-size: 8rem;
+}
+
+/* Style for the personal form */
+
+.fullnameClass,
+.cpfClass,
+.genderClass,
+.birthDateClass,
+.personalStreetClass,
+.personalHouseNumberClass,
+.personalDistrictClass,
+.personalZipCodeClass,
+.personalCityClass,
+.personalStateClass,
+.personalEmailClass,
+.personalPhoneClass,
+.personalServiceClass,
+.personalDescriptionClass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2em;
+  font-size: 2rem;
+}
+
+input {
+  font-size: 1.2rem;
+  margin-left: 0.3em;
+  border: 3px solid #585656;
+  border-radius: 25px;
+  padding-left: 0.45em;
+}
+
+.fullnameClass {
+  width: 30%;
+}
+
+.fullnameClass input {
+  width: 50%;
+}
+
+.cpfClass {
+  width: 15%;
+}
+
+.cpfClass input {
+  width: 60%;
+}
+
+.genderClass {
+  width: 15%;
+}
+
+.genderClass select {
+  font-size: 1.2rem;
+  margin-left: 0.3em;
+  border: 3px solid #585656;
+  border-radius: 25px;
+  padding-left: 0.45em;
+  width: 60%;
+}
+
+.birthDateClass {
+  width: 30%;
+}
+
+.birthDateClass input {
+  width: 32%;
+}
+
+.personalStreetClass {
+  width: 35%;
+}
+
+.personalStreetClass input {
+  width: 75%;
+}
+
+.personalHouseNumberClass {
+  width: 10%;
+}
+
+.personalHouseNumberClass input {
+  width: 40%;
+}
+
+.personalDistrictClass {
+  width: 25%;
+}
+
+.personalDistrictClass input {
+  width: 65%;
+}
+
+.personalZipCodeClass {
+  width: 20%;
+}
+
+.personalZipCodeClass input {
+  width: 65%;
+}
+
+.personalCityClass {
+  width: 25%;
+}
+
+.personalCityClass input {
+  width: 65%;
+}
+
+.personalStateClass {
+  width: 20%;
+}
+
+.personalStateClass input {
+  width: 55%;
+}
+
+.personalEmailClass {
+  width: 30%;
+}
+
+.personalEmailClass input {
+  width: 70%;
+}
+
+.personalPhoneClass {
+  width: 25%;
+}
+
+.personalPhoneClass input {
+  width: 65%;
+}
+
+.personalServiceClass {
+  width: 35%;
+}
+
+.personalServiceClass input {
+  width: 55%;
+}
+
+.personalDescriptionClass {
+  width: 65%;
+  height: 5rem;
+}
+
+.personalDescriptionClass textarea {
+  width: 90%;
+  height: 100%;
+  font-size: 1.2rem;
+  margin-left: 0.3em;
+  border: 3px solid #585656;
+  border-radius: 25px;
+  padding: 0.6em;
+}
+
+/* End of personal's form style */
+
+/* Style for the company form */
+
+.fullCompanyNameClass,
+.cnpjClass,
+.companyStreetClass,
+.companyNumberClass,
+.companyDistrictClass,
+.companyZipCodeClass,
+.companyCityClass,
+.companyStateClass,
+.companyEmailClass,
+.companyPhoneClass,
+.companyServiceClass,
+.companyDescriptionClass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2em;
+  font-size: 2rem;
+}
+
+.fullCompanyNameClass {
+  width: 65%;
+}
+
+.fullCompanyNameClass input {
+  width: 70%;
+}
+
+.cnpjClass {
+  width: 20%;
+}
+
+.cnpjClass input {
+  width: 60%;
+}
+
+.companyStreetClass {
+  width: 35%;
+}
+
+.companyStreetClass input {
+  width: 75%;
+}
+
+.companyNumberClass {
+  width: 10%;
+}
+
+.companyNumberClass input {
+  width: 40%;
+}
+
+.companyDistrictClass {
+  width: 25%;
+}
+
+.companyDistrictClass input {
+  width: 65%;
+}
+
+.companyZipCodeClass {
+  width: 20%;
+}
+
+.companyZipCodeClass input {
+  width: 65%;
+}
+
+.companyCityClass {
+  width: 25%;
+}
+
+.companyCityClass input {
+  width: 65%;
+}
+
+.companyStateClass {
+  width: 20%;
+}
+
+.companyStateClass input {
+  width: 55%;
+}
+
+.companyEmailClass {
+  width: 30%;
+}
+
+.companyEmailClass input {
+  width: 70%;
+}
+
+.companyPhoneClass {
+  width: 25%;
+}
+
+.companyPhoneClass input {
+  width: 65%;
+}
+
+.companyServiceClass {
+  width: 35%;
+}
+
+.companyServiceClass input {
+  width: 55%;
+}
+
+.companyDescriptionClass {
+  width: 65%;
+  height: 5rem;
+}
+
+.companyDescriptionClass textarea {
+  width: 90%;
+  height: 100%;
+  font-size: 1.2rem;
+  margin-left: 0.3em;
+  border: 3px solid #585656;
+  border-radius: 25px;
+  padding: 0.6em;
+}
+
+/* End of company's form style */
+
+#submitBtn {
+  width: 8em;
+  height: 7vh;
+  margin: auto;
+  font-size: 2rem;
+  border: 1px solid;
+  border-radius: 25px;
+  color: #a0ded6;
+  background-color: #044952;
+  transition: 0.2s linear;
+  grid-area: submitBtn;
+}
+
+#submitBtn:hover {
+  cursor: pointer;
+  background-color: #5a5f5f;
+}
+
+.registered {
+  width: 100vw;
+  padding: 1em;
+}
+
+.registeredTitle {
+  text-align: center;
+  padding: 0.5em;
+  font-size: 6rem;
+  color: #252326;
+}
+
+table {
+  width: 98%;
+  text-align: center;
+  margin: 1em;
+  border: 3px solid black;
+  background-color: #1693a5;
+}
+
+#tableNameRow {
+  font-size: 3rem;
+}
+
+.tableHeader {
+  font-size: 2rem;
+  background-color: #8ee3ee;
+  border: 1px solid black;
+}
+
+.tableDescription {
+  border: 1px solid black;
+  font-size: 1.2rem;
+  background-color: #d6ecdf;
+}
+
+.footer {
+  background-color: #616161;
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: center;
+}
+
+.footer a {
+  color: #8ee3ee;
+}
+
+.footer a:hover {
+  color: #044952;
+}
